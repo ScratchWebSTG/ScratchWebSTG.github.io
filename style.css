@@ -1,0 +1,305 @@
+
+#wrapper {
+    /*background-color: beige;*/
+    display: grid;
+    grid-auto-rows: minmax(0,auto);
+    grid-template-columns: minmax(0px,1fr) repeat(6, minmax(0,175px)) minmax(0px, 1fr);
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+#logo {
+    opacity: 80%;
+    width: auto;
+    height: 450px;
+}
+
+
+header {
+	background-color: #003058;
+	color: #FFFFFF;
+	font-family: 'Trebuchet MS';
+	grid-row: 3 / 4;
+	grid-column: 1 / -1;
+    opacity: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Trebuchet MS';
+    padding-left: 4rem;
+    text-decoration: none;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-family: 'Trebuchet MS';
+    padding-left: 1rem;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    font-weight: bold;
+    background-color: lightgray;
+    position: sticky;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    flex-direction: row;
+    position: sticky;
+    opacity: 80%;
+    height: 60px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-left: 0px;
+    
+}
+
+#homeHero {
+    height: 700px;
+	background-image: url(Photos/bathroom1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	grid-row: 1 / 4;
+	grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#galleryHero {
+    height: 700px;
+	background-image: url(Photos/house2.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	grid-row: 1 / 4;
+	grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#bioHero {
+    height: 700px;
+	background-image: url(Photos/bathroom2.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	grid-row: 1 / 4;
+	grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactHero {
+    height: 700px;
+	background-image: url(Photos/house1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	grid-row: 1 / 4;
+	grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 100px;
+}
+
+#space {
+    width: 400px;
+    height:300px;
+    background-color: blue;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    text-decoration: none;
+    color: black;
+    
+}
+
+h1 a:hover {
+    color: blueviolet;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-row: 4 / 8;
+    grid-column: 2 / 8;
+    margin-right: 2rem;
+    font-family: Trebuchet;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS';
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    align-self: center;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+
+#mainStuff {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#galleryStuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleryStuff img {
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#bioStuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#bioPics {
+    display: flex;
+    flex-direction: row;
+}
+
+#alexPhoto {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#famPhoto {
+    height: 450px;
+    width: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#contactStuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactStuff img {
+    border-radius: 50px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        height: auto;
+        width: 250px;
+        border-radius: 75px;
+    }
+
+    #logo {
+        opacity: 80%;
+        width: auto;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    #mainStuff {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #famPhoto {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        padding: 0px;
+    }
+
+
+}
+/* 
+
+add some media queries to make it more responsive to 
+mobile users.
+
+find some stock photos of nice bathrooms, homes, things like that. 
+make sure to grab photos of MODERN projects
+
+look up css reset.
+
+Write up stuff on FAMILY, family pics etc. for the bio page. Don't make it just about alexxxx
+"as a kid super good with hands, loves pulling things apart and putting them back together. 
+Apprenticed for a few handymen, etc."
+
+add a hover drop down list for contact nav element, and reformat pictures to be smaller, and increase text size for contact info.
+
+HTTPS and search engine optimization
+
+*/
+
+
+
